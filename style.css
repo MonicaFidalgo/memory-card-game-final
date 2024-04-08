@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 48px;
+}
+
+.cards {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+  height: 203px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.card .front-view {
+  height: 203px;
+  width: 150px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card .back-view {
+  height: 203px;
+  width: 150px;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+}
+
+.card.flip {
+  transform: rotateY(0);
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.winner {
+  background-image: url(https://cdn.glitch.com/fe55c52b-f859-4f17-a4c6-1af45426e959%2F6ob.gif?v=1620494080396);
+}
