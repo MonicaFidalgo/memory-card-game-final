@@ -20,9 +20,9 @@ Memory Card Game is a classic card matching game where players need to find matc
 
 ## Features
 
-- 16 cards (8 pairs) to match
+- 12 cards (6 pairs) to match
 - Card flipping animation
-- Win detection and game reset
+- Win detection
 
 ## How to Play
 
@@ -40,7 +40,7 @@ Memory Card Game is a classic card matching game where players need to find matc
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/memory-card-game.git
+   git clone https://github.com/yourusername/memory-card-game-final.git
    ```
 
 2. Navigate to the project directory:
